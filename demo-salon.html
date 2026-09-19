@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Velvet Studio | Luxury Hair & Beauty Salon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --salon-gold: #c5a059;
+      --salon-dark: #1c1917;
+      --salon-bg: #fafaf9;
+      --text-main: #292524;
+      --text-muted: #78716c;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Plus Jakarta Sans', sans-serif; background: var(--salon-bg); color: var(--text-main); line-height: 1.6; }
+    h1, h2, h3 { font-family: 'Playfair Display', serif; }
+    
+    /* Demo Navigation Bar */
+    .demo-bar {
+      background: #0f172a;
+      color: #ffffff;
+      padding: 10px 20px;
+      font-size: 0.88rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 2000;
+    }
+    .demo-bar a { color: #38bdf8; text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 6px; }
+    .demo-bar a:hover { text-decoration: underline; }
+
+    /* Salon Header */
+    .header { background: #ffffff; padding: 20px 0; border-bottom: 1px solid #e7e5e4; position: sticky; top: 40px; z-index: 1000; }
+    .container { width: 90%; max-width: 1100px; margin: 0 auto; }
+    .nav-flex { display: flex; justify-content: space-between; align-items: center; }
+    .logo { font-size: 1.8rem; font-weight: 700; color: var(--salon-dark); letter-spacing: -0.5px; }
+    .logo span { color: var(--salon-gold); }
+    .nav-links { display: flex; gap: 24px; list-style: none; font-weight: 500; font-size: 0.95rem; }
+    .nav-links a { text-decoration: none; color: var(--text-main); }
+    .nav-links a:hover { color: var(--salon-gold); }
+    .btn-gold { background: var(--salon-gold); color: #ffffff; padding: 10px 22px; border-radius: 4px; text-decoration: none; font-weight: 600; font-size: 0.9rem; }
+    .btn-gold:hover { background: #b38e46; }
+
+    /* Hero Section */
+    .salon-hero {
+      background: linear-gradient(rgba(28, 25, 23, 0.6), rgba(28, 25, 23, 0.6)), url('assets/images/portfolio_salon.png') center/cover no-repeat;
+      color: #ffffff;
+      padding: 120px 0;
+      text-align: center;
+    }
+    .salon-hero h1 { font-size: 3.2rem; margin-bottom: 16px; font-weight: 700; }
+    .salon-hero p { font-size: 1.2rem; max-width: 600px; margin: 0 auto 30px auto; opacity: 0.9; }
+
+    /* Services Grid */
+    .section { padding: 80px 0; }
+    .section-title { text-align: center; margin-bottom: 50px; }
+    .section-title h2 { font-size: 2.4rem; color: var(--salon-dark); margin-bottom: 10px; }
+    .section-title p { color: var(--text-muted); }
+    .price-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+    .price-card { background: #ffffff; border: 1px solid #e7e5e4; border-radius: 8px; padding: 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); }
+    .price-card h3 { color: var(--salon-gold); font-size: 1.5rem; margin-bottom: 20px; border-bottom: 2px solid var(--salon-gold); padding-bottom: 8px; }
+    .menu-item { display: flex; justify-content: space-between; margin-bottom: 16px; border-bottom: 1px dashed #e7e5e4; padding-bottom: 8px; }
+    .menu-item-name { font-weight: 600; }
+    .menu-item-desc { font-size: 0.85rem; color: var(--text-muted); }
+    .menu-item-price { font-weight: 700; color: var(--salon-dark); }
+
+    /* Booking Banner */
+    .booking-banner { background: var(--salon-dark); color: #ffffff; padding: 60px 0; text-align: center; border-radius: 12px; margin-top: 40px; }
+    .booking-banner h2 { font-size: 2.2rem; margin-bottom: 16px; }
+    .booking-banner p { margin-bottom: 24px; opacity: 0.8; }
+
+    /* Footer */
+    .footer { background: #141210; color: #a8a29e; padding: 40px 0; text-align: center; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+
+  <!-- DEMO BACK BANNER -->
+  <div class="demo-bar">
+    <span>✨ Live Demo Preview by <strong>Yalis AI Solutions</strong></span>
+    <a href="index.html#portfolio">← Back to Yalis AI Portfolio</a>
+  </div>
+
+  <!-- SALON HEADER -->
+  <header class="header">
+    <div class="container nav-flex">
+      <a href="#" class="logo">Velvet <span>Studio</span></a>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#stylists">Stylists</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#book" class="btn-gold">Book Appointment</a>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="salon-hero">
+    <div class="container">
+      <h1>Experience Luxury Hair & Skincare</h1>
+      <p>Bespoke styling, organic treatments, and relaxing salon experiences crafted for your individual beauty.</p>
+      <a href="#book" class="btn-gold" style="padding: 14px 32px; font-size: 1rem;">Book Your Visit Today</a>
+    </div>
+  </section>
+
+  <!-- SERVICES & PRICING -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-title">
+        <h2>Our Service Menu</h2>
+        <p>Premium hair care and skincare tailored to perfection</p>
+      </div>
+
+      <div class="price-grid">
+        
+        <!-- CARD 1 -->
+        <div class="price-card">
+          <h3>Hair Styling & Cuts</h3>
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Signature Haircut & Blowdry</div>
+              <div class="menu-item-desc">Includes consultation & wash</div>
+            </div>
+            <div class="menu-item-price">₹1,499</div>
+          </div>
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Balayage & Color Gloss</div>
+              <div class="menu-item-desc">Full custom hand-painted highlights</div>
+            </div>
+            <div class="menu-item-price">₹4,999</div>
+          </div>
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Keratin Smoothing Treatment</div>
+              <div class="menu-item-desc">Frizz-free shine lasting up to 4 months</div>
+            </div>
+            <div class="menu-item-price">₹5,499</div>
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="price-card">
+          <h3>Skincare & Spa</h3>
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Hydra-Glow Facial</div>
+              <div class="menu-item-desc">Deep exfoliation and hyaluron hydration</div>
+            </div>
+            <div class="menu-item-price">₹2,999</div>
+          </div>
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Organic Herbal Hair Spa</div>
+              <div class="menu-item-desc">Scalp nourish treatment with essential oils</div>
+            </div>
+            <div class="menu-item-price">₹1,899</div>
+          </div>
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Bridal Hair & Makeup Package</div>
+              <div class="menu-item-desc">Includes trial session & saree draping</div>
+            </div>
+            <div class="menu-item-price">₹12,999</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- BOOKING BANNER -->
+      <div class="booking-banner" id="book">
+        <h2>Ready for a New Look?</h2>
+        <p>Reserve your appointment online in under 60 seconds.</p>
+        <a href="tel:+9191805149861" class="btn-gold" style="padding: 14px 28px;">Call to Book: +91 91805149861</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Velvet Studio Hair Salon. All Rights Reserved. Built by Yalis AI Solutions.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

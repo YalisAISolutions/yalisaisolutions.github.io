@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apex Dental Care Clinic | Modern Family Dentistry</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --clinic-blue: #0284c7;
+      --clinic-dark: #0f172a;
+      --clinic-light: #f0f9ff;
+      --text-main: #0f172a;
+      --text-muted: #475569;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Plus Jakarta Sans', sans-serif; background: #f8fafc; color: var(--text-main); line-height: 1.6; }
+    
+    /* Demo Top Banner */
+    .demo-bar {
+      background: #0f172a;
+      color: #ffffff;
+      padding: 10px 20px;
+      font-size: 0.88rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 2000;
+    }
+    .demo-bar a { color: #38bdf8; text-decoration: none; font-weight: 600; }
+    .demo-bar a:hover { text-decoration: underline; }
+
+    /* Clinic Header */
+    .header { background: #ffffff; padding: 18px 0; border-bottom: 1px solid #e2e8f0; position: sticky; top: 40px; z-index: 1000; }
+    .container { width: 90%; max-width: 1100px; margin: 0 auto; }
+    .nav-flex { display: flex; justify-content: space-between; align-items: center; }
+    .logo { font-size: 1.6rem; font-weight: 800; color: var(--clinic-dark); text-decoration: none; }
+    .logo span { color: var(--clinic-blue); }
+    .nav-links { display: flex; gap: 24px; list-style: none; font-weight: 600; font-size: 0.95rem; }
+    .nav-links a { text-decoration: none; color: var(--text-main); }
+    .nav-links a:hover { color: var(--clinic-blue); }
+    .btn-blue { background: var(--clinic-blue); color: #ffffff; padding: 10px 22px; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 0.9rem; box-shadow: 0 4px 12px rgba(2, 132, 199, 0.3); }
+
+    /* Hero Section */
+    .clinic-hero {
+      background: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)), url('assets/images/portfolio_clinic.png') center/cover no-repeat;
+      color: #ffffff;
+      padding: 120px 0;
+      text-align: center;
+    }
+    .clinic-hero h1 { font-size: 3.2rem; font-weight: 800; margin-bottom: 16px; }
+    .clinic-hero p { font-size: 1.2rem; max-width: 600px; margin: 0 auto 30px auto; opacity: 0.9; }
+
+    /* Services Grid */
+    .section { padding: 80px 0; }
+    .section-title { text-align: center; margin-bottom: 50px; }
+    .section-title h2 { font-size: 2.3rem; margin-bottom: 10px; }
+    
+    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px; }
+    .service-card { background: #ffffff; padding: 30px; border-radius: 12px; border: 1px solid #e2e8f0; box-shadow: 0 4px 12px rgba(0,0,0,0.04); transition: transform 0.2s ease; }
+    .service-card:hover { transform: translateY(-4px); border-color: var(--clinic-blue); }
+    .service-icon { width: 50px; height: 50px; background: var(--clinic-light); color: var(--clinic-blue); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 16px; }
+    .service-title { font-size: 1.2rem; font-weight: 700; margin-bottom: 10px; }
+    .service-desc { font-size: 0.92rem; color: var(--text-muted); }
+
+    /* Appointment Banner */
+    .appointment-card { background: var(--clinic-dark); color: #ffffff; padding: 50px; border-radius: 16px; text-align: center; margin-top: 50px; background-image: radial-gradient(circle at 100% 0%, rgba(2, 132, 199, 0.3) 0%, transparent 60%); }
+    .appointment-card h2 { font-size: 2.2rem; margin-bottom: 16px; }
+    .appointment-card p { margin-bottom: 24px; opacity: 0.85; max-width: 500px; margin-left: auto; margin-right: auto; }
+
+    /* Footer */
+    .footer { background: #090d16; color: #94a3b8; padding: 40px 0; text-align: center; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+
+  <!-- DEMO BACK BANNER -->
+  <div class="demo-bar">
+    <span>🩺 Live Demo Preview by <strong>Yalis AI Solutions</strong></span>
+    <a href="index.html#portfolio">← Back to Yalis AI Portfolio</a>
+  </div>
+
+  <!-- CLINIC HEADER -->
+  <header class="header">
+    <div class="container nav-flex">
+      <a href="#" class="logo">Apex <span>Dental Care</span></a>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#doctors">Our Dentists</a></li>
+        <li><a href="#reviews">Patient Reviews</a></li>
+        <li><a href="#contact">Contact & Hours</a></li>
+      </ul>
+      <a href="#book" class="btn-blue">Book Consultation</a>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="clinic-hero">
+    <div class="container">
+      <h1>Your Family's Smile Is Our Priority</h1>
+      <p>State-of-the-art dental care, painless procedures, and personalized treatments in a warm, welcoming environment.</p>
+      <a href="#book" class="btn-blue" style="padding: 14px 32px; font-size: 1rem;">Schedule Appointment</a>
+    </div>
+  </section>
+
+  <!-- CLINIC SERVICES SECTION -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-title">
+        <h2>Comprehensive Dental Services</h2>
+        <p>Advanced dental treatments for adults and children</p>
+      </div>
+
+      <div class="services-grid">
+        
+        <!-- SERVICE 1 -->
+        <div class="service-card">
+          <div class="service-icon">🦷</div>
+          <h3 class="service-title">General Checkup & Cleaning</h3>
+          <p class="service-desc">Routine examinations, plaque removal, fluoride treatments, and preventive dental care.</p>
+        </div>
+
+        <!-- SERVICE 2 -->
+        <div class="service-card">
+          <div class="service-icon">✨</div>
+          <h3 class="service-title">Cosmetic Teeth Whitening</h3>
+          <p class="service-desc">Professional 1-hour laser whitening for a brighter, brilliant white smile.</p>
+        </div>
+
+        <!-- SERVICE 3 -->
+        <div class="service-card">
+          <div class="service-icon">😁</div>
+          <h3 class="service-title">Orthodontics & Aligners</h3>
+          <p class="service-desc">Invisible clear aligners and traditional braces for perfect tooth alignment.</p>
+        </div>
+
+        <!-- SERVICE 4 -->
+        <div class="service-card">
+          <div class="service-icon">🏥</div>
+          <h3 class="service-title">Emergency Dental Care</h3>
+          <p class="service-desc">Same-day appointment availability for toothache relief, trauma, and crown repair.</p>
+        </div>
+
+      </div>
+
+      <!-- APPOINTMENT BANNER -->
+      <div class="appointment-card" id="book">
+        <h2>Book Your Dental Visit Today</h2>
+        <p>New patients welcome! Request your preferred date and time online.</p>
+        <a href="tel:+9191805149861" class="btn-blue" style="padding: 14px 28px;">Call Clinic: +91 91805149861</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Apex Dental Care Clinic. All Rights Reserved. Created by Yalis AI Solutions.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

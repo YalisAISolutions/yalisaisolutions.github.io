@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- NEON CYAN GLOW FILTER -->
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur1" />
+      <feGaussianBlur stdDeviation="15" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur2" />
+        <feMergeNode in="blur1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- METALLIC CYAN GRADIENT -->
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+
+    <!-- BRIGHT ACCENT GRADIENT -->
+    <linearGradient id="electricGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#22d3ee" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+  </defs>
+
+  <!-- EMBLEM GRAPHIC GROUP -->
+  <g filter="url(#neonGlow)">
+    
+    <!-- LEFT V-WING / Y-ARM -->
+    <polygon points="60,80 145,80 232,225 232,375 185,375 145,260 95,140" fill="url(#cyanGrad)" stroke="#22d3ee" stroke-width="2" stroke-linejoin="miter" />
+
+    <!-- RIGHT V-WING / Y-ARM -->
+    <polygon points="440,80 355,80 268,225 268,375 315,375 355,260 405,140" fill="url(#cyanGrad)" stroke="#22d3ee" stroke-width="2" stroke-linejoin="miter" />
+
+    <!-- CENTER V-BOTTOM & Y-STEM (OUTER V APEX) -->
+    <polygon points="250,440 195,355 232,355 250,385 268,355 305,355" fill="url(#electricGrad)" stroke="#38bdf8" stroke-width="2" />
+
+    <!-- TOP CENTER V CHEVRON (CREATING THE Y NEGATIVE SPACE CUTOUT) -->
+    <polygon points="250,70 190,170 230,170 250,135 270,170 310,170" fill="url(#electricGrad)" stroke="#06b6d4" stroke-width="2" />
+
+    <!-- CORE INNER GLOW LINE -->
+    <polyline points="100,105 235,320 235,400" fill="none" stroke="#e0f2fe" stroke-width="3" opacity="0.9" />
+    <polyline points="400,105 265,320 265,400" fill="none" stroke="#e0f2fe" stroke-width="3" opacity="0.9" />
+    <polyline points="250,90 250,210" fill="none" stroke="#e0f2fe" stroke-width="3" opacity="0.9" />
+
+  </g>
+</svg>
