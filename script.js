@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
     salon: {
       title: "Velvet Studio Hair & Beauty Salon",
       category: "Salon & Spa",
-      img: "assets/images/portfolio_salon.png",
+      img: "./portfolio_salon.png",
       desc: "A boutique web design created for a local beauty salon. Built to showcase services, introduce stylists, and allow customers to quickly book appointments from their phones.",
       features: [
         "Online Appointment Booking Call-to-Action",
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
     restaurant: {
       title: "Bella Vista Artisanal Bistro",
       category: "Restaurant & Cafe",
-      img: "assets/images/portfolio_restaurant.png",
+      img: "./portfolio_restaurant.png",
       desc: "A warm, high-converting digital storefront for an authentic restaurant. Displays daily specials, digital menu, location & hours, and WhatsApp orders.",
       features: [
         "Mobile-Friendly Digital Food & Drink Menu",
@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
     clinic: {
       title: "Apex Dental Care Clinic",
       category: "Healthcare & Clinic",
-      img: "assets/images/portfolio_clinic.png",
+      img: "./portfolio_clinic.png",
       desc: "A clean, reassuring website designed for a family dental clinic. Helps patients learn about dental procedures, view doctor qualifications, and request consultations.",
       features: [
         "Patient Appointment Request Form",
