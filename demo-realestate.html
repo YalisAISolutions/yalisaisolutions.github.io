@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skyline Haven Realty | Luxury Homes & Commercial Properties</title>
+  <meta name="description" content="Skyline Haven Realty offers verified luxury villas, high-rise apartments, and prime plots in top locations with transparent deals and site visit assistance.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" type="image/svg+xml" href="./logo_vy_icon.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --re-primary: #0f172a;
+      --re-accent: #059669;
+      --re-accent-hover: #047857;
+      --re-gold: #d97706;
+      --re-bg: #f8fafc;
+      --re-card-bg: #ffffff;
+      --re-text-main: #1e293b;
+      --re-text-muted: #64748b;
+      --re-border: #e2e8f0;
+      --re-shadow: 0 10px 30px -5px rgba(15, 23, 42, 0.08);
+      --re-shadow-hover: 0 20px 40px -10px rgba(15, 23, 42, 0.15);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: var(--re-bg);
+      color: var(--re-text-main);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, .brand-font {
+      font-family: 'Outfit', sans-serif;
+    }
+
+    /* Top Yalis AI Demo Sticky Bar */
+    .demo-bar {
+      background: #0f172a;
+      color: #ffffff;
+      padding: 10px 24px;
+      font-size: 0.88rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 2000;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .demo-bar a {
+      color: #38bdf8;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: color 0.2s;
+    }
+
+    .demo-bar a:hover { color: #7dd3fc; text-decoration: underline; }
+
+    /* Main Container */
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Header & Navigation */
+    .re-header {
+      background: #ffffff;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--re-border);
+      position: sticky;
+      top: 41px;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+    }
+
+    .nav-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--re-primary);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .logo span { color: var(--re-accent); }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--re-text-main);
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover { color: var(--re-accent); }
+
+    .header-cta {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .phone-link {
+      font-weight: 700;
+      color: var(--re-primary);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.95rem;
+    }
+
+    .btn-emerald {
+      background: var(--re-accent);
+      color: #ffffff;
+      padding: 10px 22px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.92rem;
+      border: none;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      box-shadow: 0 4px 12px rgba(5, 150, 105, 0.25);
+    }
+
+    .btn-emerald:hover {
+      background: var(--re-accent-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(5, 150, 105, 0.35);
+    }
+
+    /* Hero Section */
+    .re-hero {
+      background: linear-gradient(135deg, rgba(15, 23, 42, 0.85) 0%, rgba(15, 23, 42, 0.7) 100%), url('./portfolio_realestate.png') center/cover no-repeat;
+      color: #ffffff;
+      padding: 100px 0 120px 0;
+      position: relative;
+    }
+
+    .hero-content {
+      max-width: 780px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(5, 150, 105, 0.2);
+      border: 1px solid rgba(5, 150, 105, 0.5);
+      color: #34d399;
+      padding: 6px 16px;
+      border-radius: 30px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .hero-title {
+      font-size: 3.4rem;
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 18px;
+    }
+
+    .hero-title span {
+      background: linear-gradient(135deg, #34d399 0%, #fbbf24 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-subtitle {
+      font-size: 1.15rem;
+      opacity: 0.9;
+      margin-bottom: 36px;
+    }
+
+    /* Real Estate Search Filter Box */
+    .search-filter-box {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+      margin-top: 30px;
+      color: var(--re-text-main);
+      text-align: left;
+    }
+
+    .filter-tabs {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid var(--re-border);
+      padding-bottom: 12px;
+    }
+
+    .tab-btn {
+      background: none;
+      border: none;
+      padding: 8px 18px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--re-text-muted);
+      cursor: pointer;
+      border-radius: 6px;
+      transition: all 0.2s;
+    }
+
+    .tab-btn.active, .tab-btn:hover {
+      background: #ecfdf5;
+      color: var(--re-accent);
+    }
+
+    .filter-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)) 140px;
+      gap: 16px;
+      align-items: end;
+    }
+
+    .filter-field label {
+      display: block;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--re-text-muted);
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .filter-field select, .filter-field input {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1px solid var(--re-border);
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 0.92rem;
+      color: var(--re-text-main);
+      background: #f8fafc;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .filter-field select:focus, .filter-field input:focus {
+      border-color: var(--re-accent);
+      background: #ffffff;
+    }
+
+    /* Stats Section */
+    .re-stats {
+      background: #ffffff;
+      padding: 30px 0;
+      border-bottom: 1px solid var(--re-border);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 24px;
+      text-align: center;
+    }
+
+    .stat-number {
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: var(--re-primary);
+    }
+
+    .stat-number span { color: var(--re-accent); }
+
+    .stat-label {
+      font-size: 0.9rem;
+      color: var(--re-text-muted);
+      font-weight: 600;
+    }
+
+    /* Section Headers */
+    .section { padding: 90px 0; }
+
+    .section-title {
+      text-align: center;
+      max-width: 650px;
+      margin: 0 auto 50px auto;
+    }
+
+    .section-badge {
+      display: inline-block;
+      background: #ecfdf5;
+      color: var(--re-accent);
+      padding: 4px 14px;
+      border-radius: 20px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      letter-spacing: 0.5px;
+    }
+
+    .section-title h2 {
+      font-size: 2.4rem;
+      font-weight: 800;
+      color: var(--re-primary);
+      margin-bottom: 12px;
+    }
+
+    .section-title p {
+      color: var(--re-text-muted);
+      font-size: 1.05rem;
+    }
+
+    /* Property Grid & Cards */
+    .property-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 30px;
+    }
+
+    .property-card {
+      background: var(--re-card-bg);
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid var(--re-border);
+      box-shadow: var(--re-shadow);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .property-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--re-shadow-hover);
+    }
+
+    .property-img-wrap {
+      position: relative;
+      height: 240px;
+      overflow: hidden;
+    }
+
+    .property-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .property-card:hover .property-img-wrap img {
+      transform: scale(1.06);
+    }
+
+    .property-tag-badge {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(4px);
+      color: #ffffff;
+      padding: 4px 12px;
+      border-radius: 6px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    .property-price-badge {
+      position: absolute;
+      bottom: 16px;
+      right: 16px;
+      background: var(--re-accent);
+      color: #ffffff;
+      padding: 6px 14px;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      font-weight: 800;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    .property-body {
+      padding: 24px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .property-location {
+      font-size: 0.85rem;
+      color: var(--re-accent);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .property-title {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--re-primary);
+      margin-bottom: 12px;
+      line-height: 1.3;
+    }
+
+    .property-specs {
+      display: flex;
+      gap: 16px;
+      padding: 12px 0;
+      border-top: 1px solid var(--re-border);
+      border-bottom: 1px solid var(--re-border);
+      margin-bottom: 18px;
+      font-size: 0.88rem;
+      color: var(--re-text-muted);
+      font-weight: 600;
+    }
+
+    .spec-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .property-amenities {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+
+    .amenity-pill {
+      background: #f1f5f9;
+      color: var(--re-text-main);
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 0.78rem;
+      font-weight: 600;
+    }
+
+    .property-actions {
+      margin-top: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 1.5px solid var(--re-border);
+      color: var(--re-text-main);
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 0.88rem;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+
+    .btn-outline:hover {
+      border-color: var(--re-primary);
+      background: var(--re-primary);
+      color: #ffffff;
+    }
+
+    /* Why Choose Us Banner */
+    .why-re {
+      background: var(--re-primary);
+      color: #ffffff;
+      padding: 80px 0;
+      position: relative;
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 30px;
+    }
+
+    .why-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 28px;
+      transition: transform 0.2s;
+    }
+
+    .why-card:hover { transform: translateY(-4px); }
+
+    .why-icon {
+      font-size: 2.2rem;
+      margin-bottom: 16px;
+    }
+
+    .why-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #ffffff;
+    }
+
+    .why-desc {
+      font-size: 0.9rem;
+      color: #94a3b8;
+      line-height: 1.5;
+    }
+
+    /* Modal Form */
+    .modal-overlay {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(15, 23, 42, 0.75);
+      backdrop-filter: blur(4px);
+      z-index: 3000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+
+    .modal-overlay.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .modal-card {
+      background: #ffffff;
+      width: 100%;
+      max-width: 520px;
+      border-radius: 16px;
+      padding: 32px;
+      box-shadow: 0 25px 50px rgba(0,0,0,0.3);
+      position: relative;
+      transform: translateY(20px);
+      transition: transform 0.3s ease;
+    }
+
+    .modal-overlay.active .modal-card {
+      transform: translateY(0);
+    }
+
+    .close-modal {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: #f1f5f9;
+      border: none;
+      width: 32px; height: 32px;
+      border-radius: 50%;
+      font-size: 1.2rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--re-text-muted);
+    }
+
+    .modal-title {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--re-primary);
+      margin-bottom: 6px;
+    }
+
+    .modal-subtitle {
+      font-size: 0.9rem;
+      color: var(--re-text-muted);
+      margin-bottom: 24px;
+    }
+
+    .form-group {
+      margin-bottom: 16px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: var(--re-text-main);
+    }
+
+    .form-group input, .form-group select, .form-group textarea {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1px solid var(--re-border);
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 0.95rem;
+      outline: none;
+    }
+
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+      border-color: var(--re-accent);
+    }
+
+    .form-success-banner {
+      display: none;
+      background: #ecfdf5;
+      border: 1px solid #a7f3d0;
+      color: #065f46;
+      padding: 16px;
+      border-radius: 8px;
+      margin-top: 16px;
+      font-size: 0.92rem;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    /* Footer */
+    .re-footer {
+      background: #090d16;
+      color: #94a3b8;
+      padding: 60px 0 30px 0;
+      font-size: 0.9rem;
+      border-top: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .footer-brand p { margin-top: 12px; max-width: 400px; line-height: 1.6; }
+
+    .footer-title { color: #ffffff; font-size: 1.1rem; font-weight: 700; margin-bottom: 16px; }
+
+    .footer-links { list-style: none; }
+    .footer-links li { margin-bottom: 10px; }
+    .footer-links a { color: #94a3b8; text-decoration: none; transition: color 0.2s; }
+    .footer-links a:hover { color: #34d399; }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding-top: 24px;
+      text-align: center;
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero-title { font-size: 2.3rem; }
+      .filter-grid { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+      .footer-grid { grid-template-columns: 1fr; gap: 30px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- DEMO BACK BANNER -->
+  <div class="demo-bar">
+    <span>✨ Live Real Estate Website Demo by <strong>Yalis AI Solutions</strong></span>
+    <a href="index.html#portfolio">← Back to Yalis AI Portfolio</a>
+  </div>
+
+  <!-- REAL ESTATE HEADER -->
+  <header class="re-header">
+    <div class="container nav-flex">
+      <a href="#" class="logo">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+          <polyline points="9 22 9 12 15 12 15 22"></polyline>
+        </svg>
+        Skyline <span>Haven</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#properties">Properties</a></li>
+        <li><a href="#why-us">Why Us</a></li>
+        <li><a href="#amenities">Amenities</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="header-cta">
+        <a href="tel:+919876543210" class="phone-link">📞 +91 98765 43210</a>
+        <button class="btn-emerald" id="open-modal-btn">Book Site Visit</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="re-hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-tag">
+          <span>✨ RERA Registered & Legal Verified Properties</span>
+        </div>
+
+        <h1 class="hero-title">
+          Find Your Dream Luxury Home in <span>Bengaluru</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Explore exclusive hand-picked villas, sky penthouses, and gated community apartments with zero brokerage options & transparent pricing.
+        </p>
+
+        <!-- PROPERTY SEARCH FILTER BOX -->
+        <div class="search-filter-box">
+          <div class="filter-tabs">
+            <button class="tab-btn active" onclick="filterType('all')">All Listings</button>
+            <button class="tab-btn" onclick="filterType('villa')">Luxury Villas</button>
+            <button class="tab-btn" onclick="filterType('apartment')">Apartments</button>
+            <button class="tab-btn" onclick="filterType('penthouse')">Penthouses</button>
+          </div>
+
+          <div class="filter-grid">
+            <div class="filter-field">
+              <label>Location</label>
+              <select id="filter-location">
+                <option value="all">All Prime Locations</option>
+                <option value="indiranagar">Indiranagar</option>
+                <option value="whitefield">Whitefield</option>
+                <option value="ubcity">UB City / Lavelle Rd</option>
+                <option value="devanahalli">Devanahalli</option>
+              </select>
+            </div>
+
+            <div class="filter-field">
+              <label>Bedrooms (BHK)</label>
+              <select id="filter-bhk">
+                <option value="all">Any BHK</option>
+                <option value="3">3 BHK</option>
+                <option value="4">4 BHK</option>
+              </select>
+            </div>
+
+            <div class="filter-field">
+              <label>Budget Range</label>
+              <select id="filter-budget">
+                <option value="all">All Budgets</option>
+                <option value="under2">Under ₹2 Crore</option>
+                <option value="above2">₹2 Cr - ₹5 Cr</option>
+              </select>
+            </div>
+
+            <button class="btn-emerald" style="padding: 13px; font-size: 0.95rem; width: 100%;" onclick="applySearchFilter()">
+              Search 🔍
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS BAR -->
+  <section class="re-stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div>
+          <div class="stat-number">500<span>+</span></div>
+          <div class="stat-label">Properties Sold</div>
+        </div>
+        <div>
+          <div class="stat-number">15<span>+</span></div>
+          <div class="stat-label">Prime Bengaluru Localities</div>
+        </div>
+        <div>
+          <div class="stat-number">100<span>%</span></div>
+          <div class="stat-label">Legal Title Clearance</div>
+        </div>
+        <div>
+          <div class="stat-number">4.9<span>★</span></div>
+          <div class="stat-label">Verified Homebuyer Rating</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROPERTY LISTINGS -->
+  <section class="section" id="properties">
+    <div class="container">
+      
+      <div class="section-title">
+        <span class="section-badge">Exclusive Portfolio</span>
+        <h2>Handcrafted Luxury Residences</h2>
+        <p>Discover premier properties carefully audited for architecture, amenities, and connectivity.</p>
+      </div>
+
+      <div class="property-grid" id="property-grid-container">
+        
+        <!-- PROPERTY CARD 1: VILLA -->
+        <div class="property-card" data-category="villa" data-location="indiranagar" data-bhk="4" data-budget="above2">
+          <div class="property-img-wrap">
+            <span class="property-tag-badge">Exclusive Villa</span>
+            <img src="./property_villa.png" alt="The Grand Azure Villa">
+            <div class="property-price-badge">₹2.85 Cr</div>
+          </div>
+          <div class="property-body">
+            <div class="property-location">📍 Indiranagar, Bengaluru</div>
+            <h3 class="property-title">The Grand Azure Luxury Villa</h3>
+            <div class="property-specs">
+              <div class="spec-item">🛏️ 4 BHK</div>
+              <div class="spec-item">🚿 4 Bath</div>
+              <div class="spec-item">📐 4,200 sq.ft</div>
+            </div>
+            <div class="property-amenities">
+              <span class="amenity-pill">Private Pool</span>
+              <span class="amenity-pill">Landscaped Lawn</span>
+              <span class="amenity-pill">Solar Powered</span>
+            </div>
+            <div class="property-actions">
+              <button class="btn-outline" onclick="openVisitModal('The Grand Azure Villa')">Schedule Visit</button>
+              <button class="btn-emerald" onclick="openVisitModal('The Grand Azure Villa')">Inquire Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROPERTY CARD 2: APARTMENT -->
+        <div class="property-card" data-category="apartment" data-location="whitefield" data-bhk="3" data-budget="under2">
+          <div class="property-img-wrap">
+            <span class="property-tag-badge">Gated Community</span>
+            <img src="./property_apartment.png" alt="Skyline Horizon Towers">
+            <div class="property-price-badge">₹1.45 Cr</div>
+          </div>
+          <div class="property-body">
+            <div class="property-location">📍 Whitefield IT Corridor</div>
+            <h3 class="property-title">Skyline Horizon Luxury Towers</h3>
+            <div class="property-specs">
+              <div class="spec-item">🛏️ 3 BHK</div>
+              <div class="spec-item">🚿 3 Bath</div>
+              <div class="spec-item">📐 2,150 sq.ft</div>
+            </div>
+            <div class="property-amenities">
+              <span class="amenity-pill">Clubhouse</span>
+              <span class="amenity-pill">Tennis Court</span>
+              <span class="amenity-pill">EV Charging</span>
+            </div>
+            <div class="property-actions">
+              <button class="btn-outline" onclick="openVisitModal('Skyline Horizon Towers')">Schedule Visit</button>
+              <button class="btn-emerald" onclick="openVisitModal('Skyline Horizon Towers')">Inquire Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROPERTY CARD 3: PENTHOUSE -->
+        <div class="property-card" data-category="penthouse" data-location="ubcity" data-bhk="4" data-budget="above2">
+          <div class="property-img-wrap">
+            <span class="property-tag-badge">Hot Listing</span>
+            <img src="./property_penthouse.png" alt="Crown Heights Sky Penthouse">
+            <div class="property-price-badge">₹4.20 Cr</div>
+          </div>
+          <div class="property-body">
+            <div class="property-location">📍 UB City / Lavelle Road</div>
+            <h3 class="property-title">Crown Heights Sky Penthouse</h3>
+            <div class="property-specs">
+              <div class="spec-item">🛏️ 4 BHK</div>
+              <div class="spec-item">🚿 5 Bath</div>
+              <div class="spec-item">📐 5,500 sq.ft</div>
+            </div>
+            <div class="property-amenities">
+              <span class="amenity-pill">Sky Lounge</span>
+              <span class="amenity-pill">Private Elevator</span>
+              <span class="amenity-pill">Panoramic Skyline View</span>
+            </div>
+            <div class="property-actions">
+              <button class="btn-outline" onclick="openVisitModal('Crown Heights Sky Penthouse')">Schedule Visit</button>
+              <button class="btn-emerald" onclick="openVisitModal('Crown Heights Sky Penthouse')">Inquire Now</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="why-re" id="why-us">
+    <div class="container">
+      <div class="section-title" style="margin-bottom: 40px;">
+        <span class="section-badge" style="background: rgba(255,255,255,0.1); color: #34d399;">Why Buyers Choose Us</span>
+        <h2 style="color: #ffffff;">Seamless & Transparent Property Buying</h2>
+        <p style="color: #94a3b8;">We eliminate middleman friction with tech-enabled legal audits and direct builder pricing.</p>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon">📜</div>
+          <h3 class="why-title">100% Legal Title Verification</h3>
+          <p class="why-desc">Every plot, apartment, and villa undergoes stringent 30-year title searching and RERA validation.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon">🤝</div>
+          <h3 class="why-title">Direct Builder Pricing</h3>
+          <p class="why-desc">Zero hidden commissions or inflated price quotes. Get transparent terms and exclusive launch offers.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon">🚗</div>
+          <h3 class="why-title">Complimentary Site Visits</h3>
+          <p class="why-desc">We arrange comfortable chauffeur-driven cab pick & drop for all weekend property visits.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon">🏦</div>
+          <h3 class="why-title">Instant Home Loan Support</h3>
+          <p class="why-desc">Pre-approved partnerships with HDFC, SBI, and ICICI Bank for rapid loan disbursal at prime rates.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT & VISIT MODAL -->
+  <div class="modal-overlay" id="visit-modal">
+    <div class="modal-card">
+      <button class="close-modal" id="close-modal-btn">&times;</button>
+      <h3 class="modal-title">Schedule a Site Visit</h3>
+      <p class="modal-subtitle">Pick a convenient date to inspect your selected property with our dedicated manager.</p>
+
+      <form id="visit-form">
+        <div class="form-group">
+          <label>Selected Property</label>
+          <input type="text" id="modal-property-name" value="The Grand Azure Villa" readonly style="background: #f1f5f9; font-weight: 700;">
+        </div>
+
+        <div class="form-group">
+          <label>Your Name *</label>
+          <input type="text" placeholder="e.g. Vikram Malhotra" required>
+        </div>
+
+        <div class="form-group">
+          <label>Phone / WhatsApp Number *</label>
+          <input type="tel" placeholder="+91 98765 43210" required>
+        </div>
+
+        <div class="form-group">
+          <label>Preferred Visit Date</label>
+          <input type="date" required>
+        </div>
+
+        <button type="submit" class="btn-emerald" style="width: 100%; padding: 14px; margin-top: 10px;">
+          Confirm Site Visit Request →
+        </button>
+
+        <div class="form-success-banner" id="modal-success">
+          🎉 Thank you! Our property manager will call you within 2 hours to confirm your site visit.
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="re-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo" style="color: #ffffff;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2.5">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            </svg>
+            Skyline <span style="color: #34d399;">Haven</span>
+          </a>
+          <p>Bengaluru's leading boutique real estate agency for luxury residential homes, high-yield commercial assets, and gated villa communities.</p>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Popular Localities</h4>
+          <ul class="footer-links">
+            <li><a href="#">Villas in Indiranagar</a></li>
+            <li><a href="#">Apartments in Whitefield</a></li>
+            <li><a href="#">Penthouses in Lavelle Rd</a></li>
+            <li><a href="#">Plots in Devanahalli</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Agency Office</h4>
+          <p style="margin-bottom: 8px;">📍 100 Ft Road, Indiranagar, Bengaluru</p>
+          <p style="margin-bottom: 8px;">📞 +91 98765 43210</p>
+          <p>✉️ contact@skylinehaven.com</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Skyline Haven Realty. Designed by Yalis AI Solutions.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPT LOGIC -->
+  <script>
+    const modal = document.getElementById('visit-modal');
+    const modalPropInput = document.getElementById('modal-property-name');
+    const openModalBtn = document.getElementById('open-modal-btn');
+    const closeModalBtn = document.getElementById('close-modal-btn');
+    const visitForm = document.getElementById('visit-form');
+    const modalSuccess = document.getElementById('modal-success');
+
+    function openVisitModal(propertyName) {
+      if (propertyName) {
+        modalPropInput.value = propertyName;
+      }
+      modal.classList.add('active');
+    }
+
+    openModalBtn.addEventListener('click', () => openVisitModal('General Property Inquiry'));
+    closeModalBtn.addEventListener('click', () => {
+      modal.classList.remove('active');
+      modalSuccess.style.display = 'none';
+    });
+
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.classList.remove('active');
+        modalSuccess.style.display = 'none';
+      }
+    });
+
+    visitForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      modalSuccess.style.display = 'block';
+      setTimeout(() => {
+        modal.classList.remove('active');
+        modalSuccess.style.display = 'none';
+        visitForm.reset();
+      }, 2500);
+    });
+
+    // Category Filter Buttons
+    function filterType(category) {
+      const cards = document.querySelectorAll('.property-card');
+      const buttons = document.querySelectorAll('.tab-btn');
+
+      buttons.forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+
+      cards.forEach(card => {
+        if (category === 'all' || card.dataset.category === category) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    // Search Box Dropdown Filter
+    function applySearchFilter() {
+      const loc = document.getElementById('filter-location').value;
+      const bhk = document.getElementById('filter-bhk').value;
+      const budget = document.getElementById('filter-budget').value;
+      const cards = document.querySelectorAll('.property-card');
+
+      cards.forEach(card => {
+        const matchLoc = (loc === 'all' || card.dataset.location === loc);
+        const matchBhk = (bhk === 'all' || card.dataset.bhk === bhk);
+        const matchBudget = (budget === 'all' || card.dataset.budget === budget);
+
+        if (matchLoc && matchBhk && matchBudget) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>
